@@ -13,15 +13,15 @@ page{
   font-weight: bold;
 }
 .login-box{
-  margin-top: 10%;
+  margin-top: 20%;
   padding: 10% 5%;
   background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 4px #888888;
+  border-radius: 25rpx;
+  box-shadow: 6rpx 6rpx 6rpx 6rpx#888888;
 }
 .login-box>input{
   margin: 5% 0 8% 0;
-  border-bottom: 1rpx solid lightgray;
+  border-bottom: 4rpx solid lightgray;
 }
 .login-btn{
   width: 100%!important;
@@ -33,7 +33,7 @@ page{
 .three-line{
   margin: 8% 0;
   text-align: center;
-  font-size: 12px;
+  font-size: 22rpx;
   color: gray;
 }
  

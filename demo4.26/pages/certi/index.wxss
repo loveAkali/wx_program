@@ -1,1 +1,2 @@
-@import "../../lib/formLogin.wxss"
+@import "../../lib/formLogin.wxss";
+@import "../../lib/default.wxss"

@@ -1,10 +1,11 @@
 {
-  "pages":[
+  "pages":["pages/personal/index",
+    "pages/welcome/index",
     "pages/index/index",
     "pages/register/index",
     "pages/certi/index",
-    "pages/login/index",
-    "pages/personal/index"
+    "pages/login/index"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",

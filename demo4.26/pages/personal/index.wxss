@@ -1,3 +1,4 @@
+@import "../../lib/default.wxss";
 .user {
   width: 725rpx;
   background: #ffffff;
@@ -34,8 +35,8 @@
 
 .my{
   margin: 15rpx 0 0 0;
-  border-top: solid 1px #ebebeb;
-  border-bottom: solid 2px #ebebeb;
+  border-top: solid 1rpx #ebebeb;
+  border-bottom: solid 2rpx #ebebeb;
 }
 .my .my-item{
   width: 750rpx;
