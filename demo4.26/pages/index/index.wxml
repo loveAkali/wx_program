@@ -1,0 +1,4 @@
+<!--pages/index/index.wxml-->
+<view>
+<text>欢迎来到跳蚤市场</text>
+</view>

@@ -1,0 +1,64 @@
+<!--pages/personal/index.wxml-->
+
+<view class="container">
+  <view class="user flex-wrp"  bindtap="loginTap">
+    <view class="flex-item">
+      <image class="userinfo-avatar" src="../../icons/person.png" background-size="cover"></image>
+    </view>
+    <view class="user-info flex-item">
+      <text class="edit">请登录</text>
+    </view>
+  </view>
+
+  <view class="my">
+    <view class="my-item flex-wrp" bindtap="certificationTap">
+      <view class="myitem-icon flex-item" >
+        <image src="../../icons/more.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>个人认证</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../icons/eye.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的关注</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../icons/heart.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的收藏</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../icons/comment.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的交易</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../icons/recent.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>最近浏览</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../icons/live.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的资产</text>
+      </view>
+    </view>
+  </view>
+</view>
+

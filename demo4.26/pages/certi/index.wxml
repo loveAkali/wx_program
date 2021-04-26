@@ -1,0 +1,16 @@
+<!--pages/certi/index.wxml-->
+<view class="login-container">
+  <view class="title">请填写您的真实信息</view>
+  <view class="login-box">
+    <label>姓名</label>
+    <input placeholder="请输入您的姓名"/>
+    <label>学校</label>
+    <input placeholder="请输入您的学校" password="true"/>
+    <label>学号</label>
+    <input placeholder="请输入您的学号" password="true"/>
+    <view class="three-line">一一一收集的信息只作审核用一一一一</view>
+    <view class="three-line">一一一一严格保证用户隐私一一一一</view>
+    <button class="login-btn" style="background-color:green;" bindtap="loginTap">立即认证</button>
+  </view>
+</view>
+
