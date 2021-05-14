@@ -1,5 +1,0 @@
-@import "../../lib/formLogin.wxss";
-@import "../../lib/default.wxss";
-.title {
-  margin-top: 50%;
-}
