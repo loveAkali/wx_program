@@ -1,0 +1,101 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true" class="container" bindscrolltolower="lower">
+  <!-- 搜索栏 -->
+  <view>
+    <SearchInput></SearchInput>
+  </view>
+  <!-- 导航 开始 -->
+  <view>
+		<view class="view_2">
+			<view class="view_tupianwenzi position1">
+				<image class="image_tupian" src="../../icons/heart.png"></image>
+				<text class="text_1">预订</text>
+            </view>
+            <!-- <view class="view_tupianwenzi position1">
+				<image class="image_tupian" src="../../icons/heart.png"></image>
+				<text class="text_1">关注</text>
+			</view> -->
+			<view class="view_tupianwenzi position2">
+				<image class="image_tupian" src="../../icons/eye.png"></image>
+				<text class="text_1">拼单</text>
+			</view>
+		</view>
+
+	</view>
+  <!-- 内容 -->
+  <view class="box">
+  <view class="left">
+    <block wx:for="{{values}}"  wx:for-item="item" wx-key="{{item.GoodsId}}" class="container">
+        <view class="feed-item" bindtap="bindGoodsTap" data-url="{{item.GoodsId}}">
+            <view class="feed-source">
+                <a>
+                    <view class="avatar">
+                        <image src="{{item.picurl}}"></image>
+                    </view>
+                    <text>卖家：{{item.OwnerName}} </text>
+                    <!-- <view> <text>类别：{{item.feed_source_txt}}</text></view> -->
+                </a>
+                <image class="item-more" mode="aspectFit" src="../../icons/more.png" bindtap="moreTap"></image>
+            </view>
+            <view class="feed-content">
+                <view>
+                    <view class="pic"><image src="{{item.picurl}}" mode="widthFix"></image></view>
+                    <!-- 标题 -->
+                    <view class="question">
+                        <text>{{item.GoodsId}}</text>
+                     </view>
+                    <!-- 简介 -->
+                    <view bindtap="bindItemTap" class="answer-body">
+                        <text class="answer-txt" aid="{{answer_id}}">{{item.Info}}</text>
+                    </view>
+                    <!-- 属性 -->
+                    <view class="answer-actions" bindtap="bindItemTap">
+                        <view class="infor">
+                            <text class="prize">价格：{{item.Price}}   </text>
+                            <text>关注人数：{{item.comment_num}}   </text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+  </view>
+  <view class="right">
+    <block wx:for="{{values}}" wx:for-item="item"  wx-key="{{item.GoodsId}}" class="container">
+        <view class="feed-item" bindtap="bindGoodsTap">
+            <view class="feed-source">
+                <a class="">
+                    <view class="avatar">
+                        <image src="{{item.feed_source_img}}"></image>
+                    </view>
+                    <text>卖家：{{item.feed_source_name}} </text>
+                    <!-- <view> <text>类别：{{item.feed_source_txt}}</text></view> -->
+                </a>
+                <image class="item-more" mode="aspectFit" src="../../icons/more.png" bindtap="moreTap"></image>
+            </view>
+            <view class="feed-content">
+                <view>
+                    <view class="pic"><image src="{{item.picurl}}" mode="widthFix"></image></view>
+                    <!-- 标题 -->
+                    <view class="question">
+                        <text>{{item.GoodsId}}</text>
+                     </view>
+                    <!-- 简介 -->
+                    <view bindtap="bindItemTap" class="answer-body">
+                        <text class="answer-txt" aid="{{answer_id}}">{{item.answer_ctnt}}</text>
+                    </view>
+                    <!-- 属性 -->
+                    <view class="answer-actions" bindtap="bindItemTap">
+                        <view class="infor">
+                            <text class="prize">价格：{{item.good_num}}   </text>
+                            <text>关注人数：{{item.comment_num}}   </text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+  </view>
+</view>
+</scroll-view>
+

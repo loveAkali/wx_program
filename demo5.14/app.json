@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/index",
+    "pages/add/index",
+    "pages/welcome/index",
+    "pages/goods/index",
+    "pages/message/index",
+    "pages/personal/index",
+    "pages/register/index",
+    "pages/certi/index",
+    "pages/login/index",
+    "pages/report/index",
+    "pages/record/index",
+    "component/search-input/search-input"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "商场",
+        "iconPath": "icons/shouye.png",
+        "selectedIconPath": "icons/shouye-o.png"
+      },
+      {
+        "pagePath": "pages/message/index",
+        "text": "消息",
+        "iconPath": "icons/shouye.png",
+        "selectedIconPath": "icons/shouye-o.png"
+      },
+      {
+        "pagePath": "pages/add/index",
+        "text": "发布",
+        "iconPath": "icons/shouye.png",
+        "selectedIconPath": "icons/shouye-o.png"
+      },
+      {
+        "pagePath": "pages/personal/index",
+        "text": "个人中心",
+        "iconPath": "icons/denglu.png",
+        "selectedIconPath": "icons/denglu-o.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

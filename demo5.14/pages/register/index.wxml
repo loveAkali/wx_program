@@ -1,0 +1,12 @@
+<view class="login-container">
+  <view class="title">请设置用户名与密码</view>
+  <view class="login-box">
+    <label>昵称</label>
+    <input placeholder="请输入您的昵称"/>
+    <label>密码</label>
+    <input placeholder="请输入您的密码" password="true"/>
+    <label>请确认密码</label>
+    <input placeholder="请再次输入您的密码" password="true"/>
+    <button class="login-btn" style="background-color:green;" bindtap="loginTap">立即注册</button>
+  </view>
+</view>

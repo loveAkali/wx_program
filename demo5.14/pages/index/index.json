@@ -1,0 +1,7 @@
+
+{
+  "usingComponents": {
+    "SearchInput":"../../component/search-input/search-input"
+  },
+  "navigationBarTitleText": "跳蚤小市场"
+}

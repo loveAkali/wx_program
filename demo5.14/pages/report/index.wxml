@@ -1,0 +1,47 @@
+<!--pages/report/index.wxml-->
+<view class="login-container">
+  <view class="title">请选择举报原因</view>
+  <radio-group bindchange="radioChange">
+      <view class="login-box">
+        <a class="text2">色情低俗</a>
+        <radio value="0" checked="{{false}}"/>
+      </view>
+      <view class="login-box">
+        <a class="text2">政治敏感</a>
+        <radio value="1" checked="{{false}}"/>
+      </view>
+      <view class="login-box">
+        <a class="text1">违法</a>
+        <radio value="2" checked="{{false}}"/>
+      </view>
+      <view class="login-box">
+        <a class="text1">广告</a>
+        <radio value="3" checked="{{false}}"/>
+      </view>
+      <view class="login-box">
+        <a class="text1">欺诈</a>
+        <radio value="4" checked="{{false}}"/>
+      </view>
+      <view class="login-box">
+        <a class="text3">侵犯未成年人权益</a>
+        <radio value="5" checked="{{false}}"/>
+      </view>
+      <view class="login-box">
+        <a class="text1">其它</a>
+        <radio value="6" checked="{{false}}"/>
+      </view>
+  </radio-group>
+  <!-- <view class="fb_content">
+    <view class="area"><textarea value="{{textVal}}" bindinput="handleTextInput" placeholder="请描述一下您的问题(50字以内)" maxlength="50"> </textarea></view>
+        <view class="fb_tool">
+          <button bindtap="handleChooseImg">+</button>      
+        </view>
+    </view> -->
+    <view class="form_btn_wrap">
+      <button bindtap="reportGoods">
+        <icon  type="success_no_circle" size="23" color="white"></icon>提交
+      </button>
+    </view>
+</view>
+
+

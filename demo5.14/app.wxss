@@ -1,0 +1,9 @@
+page{
+  /* 定义主题颜色 */
+  --themeColor:#8CCEFD;
+  /*
+   定义统一字体大小  假设设计稿 大小是 375px 
+   1px= 2rpx
+   14px = 28rpx
+    */
+}

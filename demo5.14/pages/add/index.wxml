@@ -1,0 +1,23 @@
+<!--pages/add/index.wxml-->
+<view class="login-container">
+  <view class="title">请填写以下信息</view>
+  <view class="login-box">
+    <input placeholder="请输入商品名称"/>
+    <input placeholder="请输入商品定价" password="true"/>
+  </view>
+  <view class="login-box">
+    <textarea placeholder="请输入商品详细信息（100字以内）" maxlength="100"/>
+  </view>
+  <view class="label-text">请上传商品照片</view>
+    <view class="head" bindtap="toCropper">
+        <block wx:if="{{src}}">
+            <image mode="widthFix" src="{{src}}"></image>
+             <canvas canvas-id="attendCanvasId" style="width:500rpx;height:500rpx;position: absolute;left:-8000rpx;top:-8000rpx;" ></canvas>
+        </block>
+        <block wx:else>
+            点击裁剪
+        </block>
+    </view>
+    <button class="btn" bindtap="toCropper">拍照  / 上传</button>
+  <button class="login-btn" bindtap="login">立即发布</button>
+</view> 
